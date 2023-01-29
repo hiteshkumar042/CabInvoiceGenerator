@@ -6,10 +6,10 @@ namespace CabInvoiceGenerator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Cab Invoice Generator.");
-            Ride ride = new Ride();
-            double amount = ride.CalculateFare(30, 3);
-            Console.WriteLine("Total Fare is : " + amount);
+            
+            //UC1 & 2
+            Ride[] multiRides = { new Ride(10, 15), new Ride(10, 15) };
+            Console.WriteLine(InvoiceGenerator.CalculateFare(multiRides));
             Console.ReadLine();
         }
     }

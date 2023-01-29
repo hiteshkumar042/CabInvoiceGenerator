@@ -11,7 +11,7 @@ namespace CabInvoiceGenTest
         [TestMethod]
         public void GivenProperTimeAndDistanceShouldPass(double distance, int time, double expected)
         {
-            Ride ride = new Ride();
+            CabInvoiceGen ride = new CabInvoiceGen();
             double actual = ride.CalculateFare(distance, time);
 
             //Assert
