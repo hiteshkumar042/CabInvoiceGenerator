@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CabInvoiceGenerator
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Cab Invoice Generator.");
+            Ride ride = new Ride();
+            double amount = ride.CalculateFare(30, 3);
+            Console.WriteLine("Total Fare is : " + amount);
             Console.ReadLine();
         }
     }
